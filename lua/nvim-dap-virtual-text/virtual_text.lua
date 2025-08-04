@@ -97,7 +97,7 @@ function M.set_virtual_text(stackframe, options)
       return
     end
   end
-  if vim.treesitter.get_parser and vim.treesitter.language and vim.treesitter.language.get_lang then
+  if false and vim.treesitter.get_parser and vim.treesitter.language and vim.treesitter.language.get_lang then
     lang = vim.treesitter.language.get_lang(ft)
     if not lang then
       return
